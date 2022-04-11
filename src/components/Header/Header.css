@@ -16,4 +16,9 @@ a:hover{
     color: cadetblue;
     background-color: bisque;
 }
+.display-name{
+    text-transform: uppercase;
+    color: tomato;
+    margin-left: 3rem;
+}
 
