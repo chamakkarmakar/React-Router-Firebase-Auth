@@ -10,11 +10,12 @@ const Header = () => {
                 <Link to='/'>HOME</Link>
                 <Link to='/products'>PRODUCTS</Link>
                 <Link to='/orders'>ORDERS</Link>
-                <Link to='/login'>LOGIN</Link>
-                <Link to='/registration'>REGISTRATION</Link>
+                <Link to='/login'>SIGN IN</Link>
+                <Link to='/register'>SIGN UP</Link>
             </nav>
         </div>
     );
 };
+
 
 export default Header;
