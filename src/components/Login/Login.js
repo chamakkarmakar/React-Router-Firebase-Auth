@@ -1,9 +1,13 @@
 import React from 'react';
+import useFirebase from '../../hook/useFirebase';
 import './Login.css';
 const Login = () => {
+
+  const {signInWithGoogle} = useFirebase();
+  
     return (
         <div id="login-box">
-      <div class="left">
+      <div className="left">
         <h1>Sign In</h1>
 
         <form action="">
@@ -14,14 +18,14 @@ const Login = () => {
         </form>
       </div>
 
-      <div class="right">
-        <span class="loginwith">Sign in with<br />social network</span>
+      <div className="right">
+        <span className="loginwith">Sign in with<br />social network</span>
 
-        <button class="social-signin facebook">Log in with facebook</button>
-        <button class="social-signin twitter">Log in with Twitter</button>
-        <button class="social-signin google">Log in with Google+</button>
+        <button className="social-signin facebook">Log in with facebook</button>
+        <button className="social-signin twitter">Log in with Twitter</button>
+        <button onClick={signInWithGoogle} className="social-signin google">Log in with Google+</button>
       </div>
-      <div class="or">OR</div>
+      <div className="or">OR</div>
     </div>
     );
 };
